@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    background-color: #090909;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+/*=========================Header===========================*/
+
+.header, .header_wrapper {
+    width: 100%;
+}
+
+.header_content{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: 64px;
+}
+
+.logo{
+    width: 180px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 645px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    transition: .5s ease;
+}
+
+.links a:hover{
+    transform: translateY(-5px);
+}
+
+.search_bar__wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 24.4vw;
+    height: 53px;
+    background-color: #fff;
+    border-radius: 46.5px;
+}
+
+.search_bar__wrapper__input{
+    width: 24.4vw;
+    height: 53px;
+    border-radius: 46.5px;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    padding-left: 3vw;
+}
+
+.bx-search{
+    position: absolute;
+    color: #000;
+    font-size: 30px;
+    margin-left: 1vw;
+}
+
+/*=========================Main===========================*/
+
+.main__content{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-top: 63px;
+}
+
+.main__content_text{
+    width: 40vw;
+}
+
+.main__content_text h1{
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 5.8vw;
+    line-height: 5.88vw;
+    letter-spacing: 7px;
+}
+
+.main__content_text h2{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 85px;
+    letter-spacing: 1px;
+}
+
+.main__content_text h3{
+    width: 26vw;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 22px;
+    line-height: 20px;
+}
+
+.main__content_image{
+    position: relative;
+    width: 42vw;
+    margin-top: 17px;
+}
+
+.main__content_image p{
+    margin: 68px 5px 0 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+.float_object{
+    position: absolute;
+    z-index: -1;
+}
+
+.object1{
+    width: 26.2vw;
+    top: -75px;
+    left: -205px;
+}
+
+.object2{
+    width: 16vw;
+    top: 16vw;
+    right: -5vw;
+}
+
+.object3{
+    width: 27.8vw;
+    bottom: -3.33vw;
+    left: -12.2vw;
+}
+
+.main__content_button{
+    width: 34.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.2vw;
+    margin-top: 59px;
+}
+
+.main__content_button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    width: 16vw;
+    height: 4.2vw;
+    border: 1px solid #fff;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+.main__content_button a:hover{
+    background-color: #fff;
+    color: #090909;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #fff;
+}
+
+.main__content_button span{
+    font-size: 42px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.main__content__social_media{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12.3vw;
+}
+
+.main__content__social_media a img{
+    width: 2.25vw;
+    filter: brightness(10);
+}
