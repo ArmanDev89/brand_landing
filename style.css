@@ -44,30 +44,30 @@ button {
     justify-content: space-between;
     align-items: center;
     margin-left: 5vw;
-    margin-top: 64px;
+    margin-top: 3.33vw;
 }
 
 .logo{
-    width: 180px;
+    width: 10vw;
 }
 
 .links{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 645px;
+    width: 30vw;
 }
 
 .links a{
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.3vw;
     transition: .5s ease;
 }
 
 .links a:hover{
-    transform: translateY(-5px);
+    transform: translateY(-0.4vw);
 }
 
 .search_bar__wrapper{
@@ -75,25 +75,25 @@ button {
     display: flex;
     align-items: center;
     width: 24.4vw;
-    height: 53px;
+    height: 2.76vw;
     background-color: #fff;
-    border-radius: 46.5px;
+    border-radius: 2.42vw;
 }
 
 .search_bar__wrapper__input{
     width: 24.4vw;
-    height: 53px;
-    border-radius: 46.5px;
+    height: 2.76vw;
+    border-radius: 2.42vw;
     outline: none;
     border: none;
-    font-size: 28px;
+    font-size: 1.46vw;
     padding-left: 3vw;
 }
 
 .bx-search{
     position: absolute;
     color: #000;
-    font-size: 30px;
+    font-size: 1.5625vw;
     margin-left: 1vw;
 }
 
@@ -104,7 +104,7 @@ button {
     display: flex;
     justify-content: space-between;
     margin-left: 5vw;
-    margin-top: 63px;
+    margin-top: 3.28vw;
 }
 
 .main__content_text{
@@ -115,33 +115,33 @@ button {
     font-family: 'Dela Gothic One', sans-serif;
     font-size: 5.8vw;
     line-height: 5.88vw;
-    letter-spacing: 7px;
+    letter-spacing: 0.365vw;
 }
 
 .main__content_text h2{
-    font-size: 32px;
+    font-size: 1.67vw;
     font-weight: 400;
-    margin-top: 85px;
-    letter-spacing: 1px;
+    margin-top: 4.4vw;
+    letter-spacing: 0.052vw;
 }
 
 .main__content_text h3{
     width: 26vw;
-    font-size: 17px;
+    font-size: 0.89vw;
     font-weight: 400;
-    margin-top: 22px;
-    line-height: 20px;
+    margin-top: 1.15vw;
+    line-height: 1.1vw;
 }
 
 .main__content_image{
     position: relative;
     width: 42vw;
-    margin-top: 17px;
+    margin-top: 0.89vw;
 }
 
 .main__content_image p{
-    margin: 68px 5px 0 0;
-    font-size: 30px;
+    margin: 3.54vw 0.26vw 0 0;
+    font-size: 1.56vw;
     text-align: right;
 }
 
@@ -152,8 +152,8 @@ button {
 
 .object1{
     width: 26.2vw;
-    top: -75px;
-    left: -205px;
+    top: -4vw;
+    left: -12vw;
 }
 
 .object2{
@@ -174,7 +174,7 @@ button {
     justify-content: space-between;
     align-items: center;
     height: 4.2vw;
-    margin-top: 59px;
+    margin-top: 3.125vw;
 }
 
 .main__content_button a{
@@ -183,11 +183,11 @@ button {
     align-items: center;
     color: #fff;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.25vw;
     width: 16vw;
     height: 4.2vw;
-    border: 1px solid #fff;
-    border-radius: 18px;
+    border: 0.052vw solid #fff;
+    border-radius: 0.9375vw;
     text-decoration: none;
     transition: 0.3s ease-out;
 }
@@ -200,13 +200,13 @@ button {
 }
 
 .main__content_button span{
-    font-size: 42px;
+    font-size: 2.19vw;
     font-weight: 800;
     font-style: italic;
 }
 
 .main__content__social_media{
-    margin-top: 85px;
+    margin-top: 4.4vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,4 +216,9 @@ button {
 .main__content__social_media a img{
     width: 2.25vw;
     filter: brightness(10);
+    transition: .3s ease;
+}
+
+.main__content__social_media a img:hover{
+    transform: scale(1.08);
 }
