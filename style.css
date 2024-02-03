@@ -17,6 +17,7 @@ body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    font-display: swap;
 }
 
 img {
@@ -50,6 +51,7 @@ button {
 
 .logo{
     width: 10vw;
+    height: 1.73vw;
 }
 
 .links{
@@ -92,9 +94,11 @@ button {
 }
 
 .bx-search{
+    top: 0.68vw;
+    left: 0;
     position: absolute;
-    color: #000;
-    font-size: 1.5625vw;
+    width: 1.4vw;
+    height: 1.4vw;
     margin-left: 1vw;
 }
 
@@ -137,6 +141,7 @@ button {
 .main__content_image{
     position: relative;
     width: 42vw;
+    height: 35.14vw;
     margin-top: 0.89vw;
 }
 
@@ -216,6 +221,7 @@ button {
 
 .main__content__social_media a img{
     width: 2.25vw;
+    height: 2.2vw;
     filter: brightness(10);
     transition: .3s ease;
 }
