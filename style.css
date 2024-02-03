@@ -9,6 +9,7 @@
 }
 
 body {
+    position: relative;
     background-color: #090909;
     min-height: 100vh;
     scroll-behavior: smooth;
@@ -164,8 +165,8 @@ button {
 
 .object3{
     width: 27.8vw;
-    bottom: -3.33vw;
-    left: -12.2vw;
+    bottom: -4vw;
+    right: 32vw;
 }
 
 .main__content_button{
@@ -221,4 +222,12 @@ button {
 
 .main__content__social_media a img:hover{
     transform: scale(1.08);
+}
+
+/*=========================Adaptive design=========================*/
+
+@media only screen and (max-width: 480px){
+    .object3{
+        display: none;
+    }
 }
