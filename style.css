@@ -42,6 +42,8 @@ button {
 
 .header_content{
     width: 90vw;
+    position: relative;
+    height: 2.76vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,6 +102,99 @@ button {
     width: 1.4vw;
     height: 1.4vw;
     margin-left: 1vw;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+    z-index: 1001;
+}
+
+.menu__btn {
+    display: flex;
+    z-index: 1001;
+    align-items: center;  
+    position: fixed;
+    top: 3vw;
+    right: 10vw;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1001;
+    transition: .25s ease;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+    z-index: 1001;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+    z-index: 1001;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #000;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition: .25s ease;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .25s ease;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+.menu__item:active + .menu__box{
+    visibility: hidden;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    z-index: 1001;
+  }
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    z-index: 1001;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    z-index: 1001;
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
 }
 
 /*=========================Main===========================*/
@@ -233,7 +328,96 @@ button {
 /*=========================Adaptive design=========================*/
 
 @media only screen and (max-width: 480px){
+    .logo{
+        width: 30vw;
+        height: 1.73vw;
+    }
+    .links{
+        display: none;
+    }
+    .search_bar{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
     .object3{
+        display: none;
+    }
+    .main__content{
+        display: block;
+        margin-left: 10vw;
+    }
+    .main__content_text{
+        width: 80vw;
+    }
+    .main__content_text h1{
+        font-size: 11.9vw;
+        line-height: 10vw;
+        padding-top: 3.5vw;
+    }
+    .main__content_text h2{
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 400;
+        margin-top: 4.4vw;
+        letter-spacing: 0.052vw;
+    }
+    
+    .main__content_text h3{
+        text-align: center;
+        width: 50vw;
+        font-size: 2vw;
+        font-weight: 400;
+        line-height: 2vw;
+        margin: 3vw auto 0;
+    }
+    .main__content_button{
+        width: 60vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4.2vw;
+        margin: 6.5vw 0 0 10vw;
+    }
+    
+    .main__content_button a{
+        font-size: 3vw;
+        width: 28vw;
+        height: 8vw;
+    }
+    .main__content_button span{
+        font-size: 4vw;
+    }
+    .main__content__social_media{
+        margin-top: 6vw;
+        margin-left: 25vw;
+        width: 30vw;
+    }
+    
+    .main__content__social_media a img{
+        width: 6vw;
+        height: 5.8vw;
+        filter: brightness(10);
+        transition: .3s ease;
+    }
+    .main__content_image{
+        position: relative;
+        width: 80vw;
+        height: 35.14vw;
+        margin-top: 10vw;
+    }
+    .object1{
+        width: 35vw;
+        top: -8vw;
+        left: -15vw;
+    }
+    .object2{
+        width: 32vw;
+        top: 16vw;
+        right: -6.5vw;
+    }    
+    .main__content_image p{
         display: none;
     }
 }
