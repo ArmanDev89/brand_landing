@@ -56,6 +56,10 @@ button {
     height: 1.73vw;
 }
 
+.burger_button{
+    display: none;
+}
+
 .links{
     display: flex;
     justify-content: space-between;
@@ -332,14 +336,44 @@ button {
         width: 30vw;
         height: 1.73vw;
     }
+    .burger_button{
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    .bbutton{
+        position: absolute;
+        top: 0.5vw;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 1002;
+    }
     .links{
+        position: absolute;
         display: none;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 95vw;
+        background: #000;
+        z-index: 1000;
+        text-align: center;
+        padding-top: 30vh;
+        line-height: 15vw;
+    }
+
+    .links.active{
+        display: block;
+        transform: translateX(-100vw);
+    }
+    .links a{
+        font-size: 7vw;
+        display: block;
     }
     .search_bar{
         display: none;
-    }
-    .hamburger-menu{
-        display: block;
     }
     .object3{
         display: none;
@@ -354,7 +388,7 @@ button {
     .main__content_text h1{
         font-size: 11.9vw;
         line-height: 10vw;
-        padding-top: 3.5vw;
+        padding-top: 7vw;
     }
     .main__content_text h2{
         text-align: center;
@@ -413,9 +447,9 @@ button {
         left: -15vw;
     }
     .object2{
-        width: 32vw;
+        width: 35vw;
         top: 16vw;
-        right: -6.5vw;
+        right: -10vw;
     }    
     .main__content_image p{
         display: none;
